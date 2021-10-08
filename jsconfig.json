@@ -1,0 +1,11 @@
+{
+	"compilerOptions": {
+		"baseUrl": ".",
+		"paths": {
+			// This is where you can add new shortcuts, 
+			// You can follow how it looks below
+			"$lib/*": ["src/lib/*"]
+		}
+	},
+	"include": ["src/**/*.d.ts", "src/**/*.js", "src/**/*.svelte"]
+}
