@@ -9,7 +9,7 @@ module.exports = {
 	],
 	darkMode: 'class',
 	theme: {
-		extend: {},
+		extend: {
 		fontFamily: {
 			// prettier-ignore
 			'neue': '"Comic Neue", cursive'
@@ -31,7 +31,8 @@ module.exports = {
 				200: '#081621',
 				400: '#040B11'
 			}
-		}
+		}},
+		
 	},
 	variants: {},
 	plugins: []
