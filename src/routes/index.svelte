@@ -1,5 +1,4 @@
 <script>
-    let dark = false;
 </script>
 
 <div class="flex flex-col justify-around items-center">

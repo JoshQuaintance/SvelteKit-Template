@@ -1,13 +1,11 @@
-// tailwind.config.cjs
-module.exports = {
-	content: [
-		'./src/**/*.svelte',
-		// may also want to include HTML files
-		'./src/**/*.html'
-	],
-	theme: {
-		extend: {}
-	},
-	variants: {},
-	plugins: []
+const config = {
+    content: ['./src/**/*.{html,js,svelte,ts}'],
+
+    theme: {
+        extend: {}
+    },
+
+    plugins: []
 };
+
+module.exports = config;
