@@ -8,11 +8,11 @@
     }
 
     const formatter = new Intl.DateTimeFormat('en', {
-		hour12: true,
-		hour: 'numeric',
-		minute: '2-digit',
-		second: '2-digit'
-	});
+        hour12: true,
+        hour: 'numeric',
+        minute: '2-digit',
+        second: '2-digit'
+    });
 
     const time = readable(new Date(), function start(set) {
         const interval = setInterval(() => {
@@ -47,9 +47,7 @@
         </span>
     </button>
 
-    <span>
-        Click on the text to learn more about each technology
-        </span>
+    <span> Click on the text to learn more about each technology </span>
 </div>
 
 <style lang="postcss">
