@@ -15,7 +15,7 @@
     "lint-staged": {
         "*.{js,ts,svelte}": [
             "svelte-check",
-            "npm run format",
+            "npm run lint",
             "npm run lint:fix"
         ]
     },
