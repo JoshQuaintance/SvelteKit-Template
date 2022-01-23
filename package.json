@@ -11,8 +11,7 @@
         "lint": "prettier --ignore-path .gitignore --check --plugin-search-dir=. . && eslint --ignore-path .gitignore .",
         "lint:fix": "eslint --fix ./src/**/*.{js,ts,svelte}",
         "format": "prettier --ignore-path .gitignore --write --plugin-search-dir=. .",
-        "prepare": "husky install",
-        "postinstall": "npm run prepare"
+        "prepare": "husky install"
     },
     "lint-staged": {
         "*.{js,ts,svelte}": [
