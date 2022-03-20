@@ -24,5 +24,13 @@ module.exports = {
         'svelte3/ignore-styles': () => true
     },
     plugins: ['svelte3', '@typescript-eslint'],
+    rules: {
+        'no-console': [
+            'error',
+            {
+                allow: ['warn', 'error']
+            }
+        ]
+    },
     ignorePatterns: ['node_modules', '*.cjs']
 };
