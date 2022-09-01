@@ -25,6 +25,12 @@
     });
 </script>
 
+<svelte:head>
+    <title>Simple SvelteKit Template</title>
+
+    <meta name="description" content="A simple SvelteKit template complete with Tailwind pre-installed" />
+</svelte:head>
+
 <div class="flex flex-col justify-around items-center dark:bg-gray-900 dark:text-white leading-loose h-screen pb-24">
     <span class="text-9xl font-bold mb-10"
         >Hello <br />
