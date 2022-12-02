@@ -9,6 +9,7 @@
     "scripts": {
         "prepare": "husky install",
         "dev": "vite dev",
+        "prebuild": "pnpm run test:all",
         "build": "vite build",
         "preview": "vite preview",
         "test:all": "pnpm run test:unit && pnpm run test:com && pnpm run test:e2e",
