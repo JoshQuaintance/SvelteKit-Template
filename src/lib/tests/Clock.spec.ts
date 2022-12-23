@@ -1,15 +1,5 @@
 import { afterEach, beforeEach, describe, expect, test, vi } from 'vitest';
-import { readable } from 'svelte/store';
-
-const clock = readable(new Date(), function start(set) {
-    const interval = setInterval(() => {
-        set(new Date());
-    }, 1000);
-
-    return function stop() {
-        clearInterval(interval);
-    };
-});
+import { time as clock } from '$lib/props/clock';
 
 describe('clock and store functionality', () => {
     const mock = vi.fn((_time: Date) => expect(_time).toStrictEqual(new Date()));

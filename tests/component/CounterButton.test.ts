@@ -1,5 +1,5 @@
 import { test, expect } from '@playwright/experimental-ct-svelte';
-import CounterButton from '$lib/CounterButton.svelte';
+import CounterButton from '$lib/components/CounterButton.svelte';
 
 test('test CounterButton.svelte', async ({ mount }) => {
     const component = await mount(CounterButton);

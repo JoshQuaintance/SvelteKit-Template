@@ -1,5 +1,5 @@
 import { test, expect } from '@playwright/experimental-ct-svelte';
-import Clock from '$lib/Clock.svelte';
+import Clock from '$lib/components/Clock.svelte';
 
 const formatter = new Intl.DateTimeFormat('en', {
     hour12: true,

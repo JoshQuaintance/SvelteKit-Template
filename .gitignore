@@ -12,3 +12,12 @@ vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
 playwright/.cache
 pnpm-lock.yaml
+/test-results/
+/playwright-report/
+/playwright/.cache/
+/test-results/
+/playwright-report/
+/playwright/.cache/
+/test-results/
+/playwright-report/
+/playwright/.cache/
