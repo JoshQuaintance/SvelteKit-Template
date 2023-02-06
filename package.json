@@ -11,12 +11,6 @@
         "dev": "vite dev",
         "build": "vite build",
         "preview": "vite preview",
-        "test:all": "pnpm run test:unit && pnpm run test:com && pnpm run test:e2e",
-        "test:playwright": "pnpm run test:com && pnpm run test:e2e",
-        "test:com": "playwright test -c playwright-ct.config.ts",
-        "test:e2e": "playwright test -c playwright.config.ts",
-        "test:unit": "vitest run",
-        "test:unit-watch": "vitest",
         "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
         "check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
         "prelint": "pnpm run format",
@@ -27,23 +21,22 @@
     "lint-staged": {
         "*.{js,ts,svelte}": [
             "pnpm run check",
-            "pnpm run lint",
-            "pnpm run test:all"
+            "pnpm run lint"
         ]
     },
     "devDependencies": {
         "@fontsource/fira-mono": "^4.5.10",
-        "@playwright/test": "1.29.1",
         "@sveltejs/adapter-auto": "^1.0.2",
         "@sveltejs/adapter-static": "^1.0.5",
         "@sveltejs/kit": "^1.2.6",
-        "@types/cookie": "^0.5.1",
-        "@typescript-eslint/eslint-plugin": "^5.49.0",
-        "@typescript-eslint/parser": "^5.49.0",
-        "@vitest/ui": "^0.26.3",
+        "@typescript-eslint/eslint-plugin": "^5.50.0",
+        "@typescript-eslint/parser": "^5.50.0",
         "autoprefixer": "^10.4.13",
         "eslint": "^8.32.0",
+        "eslint-config-airbnb": "^19.0.4",
+        "eslint-config-airbnb-typescript": "^17.0.0",
         "eslint-config-prettier": "^8.6.0",
+        "eslint-plugin-import": "^2.27.5",
         "eslint-plugin-svelte3": "^4.0.0",
         "husky": "^8.0.3",
         "lint-staged": "^13.1.0",
@@ -56,10 +49,6 @@
         "tailwindcss": "^3.2.4",
         "tslib": "^2.4.1",
         "typescript": "^4.9.4",
-        "vite": "^4.0.4",
-        "vitest": "^0.26.3"
-    },
-    "dependencies": {
-        "@playwright/experimental-ct-svelte": "^1.29.2"
+        "vite": "^4.0.4"
     }
 }

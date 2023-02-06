@@ -1,6 +1,6 @@
 <script lang="ts">
-    import Clock from '$lib/components/Clock.svelte';
-    import CounterButton from '$lib/components/CounterButton.svelte';
+    import Clock from '$components/Clock.svelte';
+    import CounterButton from '$components/CounterButton.svelte';
 </script>
 
 <svelte:head>

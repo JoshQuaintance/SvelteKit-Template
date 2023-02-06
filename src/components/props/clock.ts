@@ -1,6 +1,6 @@
 import { readable } from 'svelte/store';
 
-export const time = readable(new Date(), function start(set) {
+export const time = readable(new Date(), (set) => {
     const interval = setInterval(() => {
         set(new Date());
     }, 1000);
@@ -9,3 +9,5 @@ export const time = readable(new Date(), function start(set) {
         clearInterval(interval);
     };
 });
+
+export default time;

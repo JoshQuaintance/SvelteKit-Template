@@ -1,5 +1,5 @@
 <script lang="ts">
-    import { time } from '../props/clock';
+    import { time } from '$components/props/clock';
 
     const formatter = new Intl.DateTimeFormat('en', {
         hour12: true,
